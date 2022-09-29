@@ -22,3 +22,7 @@ variable "purpose" {
   type        = string
   description = "the purpose of this resource within the network."
 }
+variable "project_id" {
+  type        = string
+  description = "the project_id of the resource."
+}

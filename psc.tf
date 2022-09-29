@@ -4,7 +4,7 @@ resource "google_compute_global_address" "default" {
   name               = var.address_name
   network            = var.network
   prefix_length      = var.subnet_mask
-  project            = module.project.project_id
+  project            = var.project_id
   purpose            = var.purpose
 }
 resource "google_service_networking_connection" "psc" {
