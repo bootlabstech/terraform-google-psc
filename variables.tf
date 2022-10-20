@@ -26,3 +26,8 @@ variable "project_id" {
   type        = string
   description = "the project_id of the resource."
 }
+
+variable "ranges" {
+  type = list(string)
+  description = "(optional) describe your variable"
+}
